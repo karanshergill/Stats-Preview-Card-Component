@@ -10,32 +10,68 @@
 </head>
 
 <body>
-    <main class="flex bg-Primary-Very-Dark-Blue h-screen w-full items-center justify-center">
-        <div class="flex flex-col w-[275px] bg-Primary-Dark-Desaturated-Blue">
-            <div class="flex flex-col">
-                <img src="/images/image-header-desktop.jpg" alt="header-image">
-            </div>
-            <div class="flex flex-col text-center">
-                <h1 class="text-Neutral-Slightly-Transparent-White-Head">Get insights that help your business grow.</h1>
-                <p class="text-Neutral-Slightly-Transparent-White-Para">Discover the benefits of data analytics and make
-                    better decisions regarding revenue, customer
-                    experience, and overall efficiency.</p>
-            </div>
-            <div class="flex flex-col">
-                <div class="flex flex-col items-center">
-                    <h2 class="text-Neutral-Slightly-Transparent-White-Head">10k+</h2>
-                    <p class="text-Neutral-Slightly-Transparent-White-Para">Companies</p>
+    <main class="flex bg-Primary-Very-Dark-Blue w-full h-screen justify-center">
+        <div class="flex items-center justify-center w-4/5 md:w-2/3">
+
+            <div class="grid grid-rows-2 md:grid-cols-2 md:grid-rows-1">
+
+                <div class="flex flex-col bg-Primary-Dark-Desaturated-Blue md:justify-between md:p-16 md:rounded-l-xl">
+
+                    <!-- Heading and Description -->
+                    <div class="flex flex-col gap-8">
+                        <!-- Heading -->
+                        <h1 class="text-Neutral-White font-Lexend font-semibold text-4xl ">Get <span
+                                class="text-Primary-Soft-Voilet">insights</span> that help
+                            your
+                            business grow.<h1>
+
+                                <!-- Description -->
+                                <p class="text-Neutral-Slightly-Transparent-White-Para font-Inter text-[14px] md:mr-4">
+                                    Discover
+                                    the
+                                    benefits of
+                                    data
+                                    analytics
+                                    and make better decisions regarding revenue, customer
+                                    experience, and overall efficiency.</p>
+
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="flex justify-between md:mr-12">
+                        <div>
+                            <h2 class="text-Neutral-White font-Lexend font-semibold text-lg">10k+</h2>
+                            <p
+                                class="text-Neutral-Slightly-Transparent-White-Para text-xs uppercase font-Inter font-light">
+                                Companies</p>
+                        </div>
+                        <div>
+                            <h2 class="text-Neutral-White font-Lexend font-semibold text-lg">314</h2>
+                            <p
+                                class="text-Neutral-Slightly-Transparent-White-Para text-xs uppercase font-Inter font-light">
+                                Templates</p>
+                        </div>
+                        <div>
+                            <h2 class="text-Neutral-White font-Lexend font-semibold text-lg">12M+</h2>
+                            <p
+                                class="text-Neutral-Slightly-Transparent-White-Para text-xs uppercase font-Inter font-light">
+                                Queries</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex flex-col items-center">
-                    <h2 class="text-Neutral-Slightly-Transparent-White-Head">314</h2>
-                    <p class="text-Neutral-Slightly-Transparent-White-Para">Templates</p>
+
+                <!-- Hero Image -->
+                <div class="-order-1 relative md:order-1">
+                    <picture class="w-full h-full">
+                        <source media="(min-width: 768px)" srcset="/images/image-header-desktop.jpg">
+                        <img src="/images/image-header-mobile.jpg" class="md:rounded-r-xl" alt="header-image">
+                    </picture>
+                    <div class="absolute inset-0 bg-Primary-Soft-Voilet opacity-75 md:rounded-r-xl"></div>
                 </div>
-                <div class="flex flex-col items-center">
-                    <h2 class="text-Neutral-Slightly-Transparent-White-Head">12M+</h2>
-                    <p class="text-Neutral-Slightly-Transparent-White-Para">Queries</p>
-                </div>
+
             </div>
         </div>
+
     </main>
 </body>
 
