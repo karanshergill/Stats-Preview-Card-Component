@@ -5,53 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/images/favicon-32x32.png" type="image/x-icon">
-    <title>Frontend Mentor | Order Summary Card</title>
+    <title>Frontend Mentor | Stats Preview Card Component</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main class="flex bg-Primary-Very-Dark-Blue w-full h-screen justify-center">
-        <div class="flex items-center justify-center w-4/5 md:w-2/3">
+    <main class="flex bg-Primary-Very-Dark-Blue justify-center h-screen">
+        <div class="flex items-center w-4/5 md:w-2/3 h-full">
 
-            <div class="grid grid-rows-2 md:grid-cols-2 md:grid-rows-1">
+            <div class="flex flex-col md:grid md:grid-cols-2 md:grid-rows-1">
 
-                <div class="flex flex-col bg-Primary-Dark-Desaturated-Blue md:justify-between md:p-16 md:rounded-l-xl">
+                <div
+                    class="flex flex-col bg-Primary-Dark-Desaturated-Blue p-8 rounded-b-xl md:justify-between md:p-16 md:rounded-br-none md:rounded-l-xl">
 
                     <!-- Heading and Description -->
-                    <div class="flex flex-col gap-8">
+                    <div class="flex flex-col gap-4 md:gap-6">
                         <!-- Heading -->
-                        <h1 class="text-Neutral-White font-Lexend font-semibold text-4xl ">Get <span
-                                class="text-Primary-Soft-Voilet">insights</span> that help
+                        <h1
+                            class="text-Neutral-White font-Lexend font-semibold text-2xl text-center md:text-3xl md:text-start">
+                            Get
+                            <span class="text-Primary-Soft-Voilet">insights</span> that help
                             your
-                            business grow.<h1>
+                            business grow.
+                        </h1>
 
-                                <!-- Description -->
-                                <p class="text-Neutral-Slightly-Transparent-White-Para font-Inter text-[14px] md:mr-4">
-                                    Discover
-                                    the
-                                    benefits of
-                                    data
-                                    analytics
-                                    and make better decisions regarding revenue, customer
-                                    experience, and overall efficiency.</p>
+                        <!-- Description -->
+                        <p
+                            class="text-Neutral-Slightly-Transparent-White-Para font-Inter text-xs text-center mx-3 leading-5 md:text-[14px] md:leading-6 md:mr-4 md:mx-0 md:text-start">
+                            Discover
+                            the
+                            benefits of
+                            data
+                            analytics
+                            and make better decisions regarding revenue, customer
+                            experience, and overall efficiency.</p>
 
                     </div>
 
                     <!-- Stats -->
-                    <div class="flex justify-between md:mr-12">
-                        <div>
+                    <div
+                        class="flex flex-col items-center gap-6 pt-6 md:gap-0 md:pt-0 md:justify-between md:flex-row md:mr-12">
+
+                        <div class="flex flex-col items-center md:items-start">
                             <h2 class="text-Neutral-White font-Lexend font-semibold text-lg">10k+</h2>
                             <p
                                 class="text-Neutral-Slightly-Transparent-White-Para text-xs uppercase font-Inter font-light">
                                 Companies</p>
                         </div>
-                        <div>
+                        <div class="flex flex-col items-center md:items-start">
                             <h2 class="text-Neutral-White font-Lexend font-semibold text-lg">314</h2>
                             <p
                                 class="text-Neutral-Slightly-Transparent-White-Para text-xs uppercase font-Inter font-light">
                                 Templates</p>
                         </div>
-                        <div>
+                        <div class="flex flex-col items-center md:items-start">
                             <h2 class="text-Neutral-White font-Lexend font-semibold text-lg">12M+</h2>
                             <p
                                 class="text-Neutral-Slightly-Transparent-White-Para text-xs uppercase font-Inter font-light">
@@ -62,11 +69,15 @@
 
                 <!-- Hero Image -->
                 <div class="-order-1 relative md:order-1">
-                    <picture class="w-full h-full">
-                        <source media="(min-width: 768px)" srcset="/images/image-header-desktop.jpg">
-                        <img src="/images/image-header-mobile.jpg" class="md:rounded-r-xl" alt="header-image">
+                    <picture>
+                        <source media="(min-width: 1000px)" srcset="/images/image-header-desktop.jpg">
+                        <img src="/images/image-header-mobile.jpg"
+                            class="rounded-t-xl md:rounded-r-xl md:rounded-tl-none" alt="header-image">
                     </picture>
-                    <div class="absolute inset-0 bg-Primary-Soft-Voilet opacity-75 md:rounded-r-xl"></div>
+                    <!-- Image Overlay -->
+                    <div
+                        class="absolute inset-0 bg-Primary-Soft-Voilet opacity-75 rounded-t-xl md:rounded-r-xl md:rounded-tl-none">
+                    </div>
                 </div>
 
             </div>
@@ -74,5 +85,10 @@
 
     </main>
 </body>
+
+<footer class="bg-Primary-Very-Dark-Blue text-Neutral-Slightly-Transparent-White-Para text-xs text-center">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p>Coded by <a href="https://karanshergill.com">Karan Shergill</a>.</p>
+</footer>
 
 </html>
